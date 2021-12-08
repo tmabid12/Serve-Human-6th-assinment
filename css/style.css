@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Lobster&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+}
+body{
+    /* background: linear-gradient(131deg, rgba(255,20,20,0.9181034482758621) 0%, rgba(255,158,0,1) 60%); */
+    background-color: rgba(255, 255, 255, 0.52);
+  display: grid;
+  justify-content: center;
+     width: 100%;
+}
+
+
+.max-width{
+    max-width: 1250px;
+    
+}
+    
+
+.navbar{
+    background: linear-gradient(90deg, rgba(255,82,0,1) 0%, rgba(255,171,0,1) 80%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 2px solid black; */
+  
+}
+.logo{
+    font-size: 34px;
+    font-weight: 800;
+    font-family: 'Lobster', cursive;
+    
+}
+.navul{
+    list-style: none;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar li a{
+    
+    padding: 10px 20px;
+    font-weight: 700;
+    position: relative;
+}
+.navbar .navul li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    background: rgb(0, 0, 0);
+    transform: translateX(-50%);
+    /* transition: .5s; */
+}
+.navbar li a:hover::after{
+    width: 70%;
+}
+.navbar button{
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 23px;
+    background-color: transparent;
+    border: 1px solid #e66d04;
+    cursor: pointer;
+}
+.navbar button:hover{
+    background-color: rgba(255,82,0,1);
+}
+/* end of nav bar   */
+.section1{
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    
+}
+.hometext{
+  width: 50%;
+   height: 100vh; 
+   flex-direction: column;
+   background: linear-gradient(320deg, rgba(255,20,20,0.9181034482758621) 0%, rgba(255,158,0,1) 68%);
+   
+}
+.hometext h1{
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+.hometext p{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.sec1-img{
+    width: 50%;
+    background-color: whitesmoke;
+    height: 100vh; 
+
+}
+.sec1-img img{
+    height: 70%;
+    width: 100%;
+}
+.section2{
+    height: 100vh;
+  
+background-color: whitesmoke;
+  flex-direction: column;
+  padding-bottom: 5em;
+  
+
+}
+.box-container{
+    width: 100%;
+  
+  height: 50vh;
+  
+}
+.section2 h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+} 
+.section2 h2{
+    font-size: 20px;
+    padding: 0px 5px 30px 5px;
+    color: #ff6600e3;
+    text-align: center;
+    
+} 
+.section2 .box{
+    height: 50vh;
+    width: 25%;
+    margin:0em 1em;
+    border-radius: 34px;
+    /* border: 2px solid rgba(255, 87, 20, 0.918); */
+    box-shadow: 0px 0px 5px 2px rgba(255, 87, 20, 0.986);
+}
+.section3{
+    background: linear-gradient(131deg, rgba(255,20,20,0.9181034482758621) 0%, rgba(255,158,0,1) 60%);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.section3 h1{
+    font-size: 50px;
+    color: white;
+    padding: 0em 1em 1em 1em;
+}
+.sec-btn{
+    background: linear-gradient(131deg, rgba(255,20,20,0.9181034482758621) 0%, rgba(255,158,0,1) 60%);
+       padding: 10px 20px;
+       font-size: 20px;
+       border-radius: 34px;
+       margin-top: 2em;
+       border: 1px solid #FF7900;
+}
+.regester{
+    height: 100vh;
+    width: 100%;
+  
+}
+.reg-text{
+    flex-direction: column;
+    width: 50%;
+    background: linear-gradient(320deg, rgba(255,20,20,0.9181034482758621) 0%, rgba(255,158,0,1) 68%);
+    height: 100vh;
+}
+.from{
+    flex-direction: column;
+    height: 60vh;
+    width: 50%;
+    height: 100vh;
+    box-shadow:inset 0px 0px 5px 2px rgba(255, 106, 20, 0.918);
+}
+.regester h1{
+    font-size: 45px;
+    padding-bottom: 1em;
+}
+.regester h2{
+    font-size:20px;
+    padding-bottom: 1em;
+}
+.from input{
+    width: 100%;
+    padding-top: 1em;
+   display: block;
+   font-size: 30px;
+   margin-bottom: 1em;
+   border: none;
+   border-bottom: 2px solid rgba(255, 114, 20, 0.972);
+   background-color: transparent;
+
+}
+.from button{
+    cursor: pointer;
+}
+footer{
+    background: linear-gradient(90deg, rgba(255,82,0,1) 0%, rgba(255,171,0,1) 80%);
+    padding: 20px;
+    /* margin: 0px 5px; */
+    box-shadow: 0px 0x 3px 2px black;
+}
+
+/* utility class */
+.color{
+    color: #fff;
+}
+.dispalay-prop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* for phone  */
+@media (max-width:754px){
+    .logo{
+        font-size: 13px;
+        padding-left: 7px;
+    }
+    .navbar button{
+               padding: 5px 10px;
+    }
+    .hometext h1{
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    .hometext p{
+        font-size: 15px;
+        letter-spacing: 2px;
+        padding: 0px 5px;
+    }
+    .box-container{
+        flex-direction: column;
+    }
+    .section2 .box{
+        height: 50vh;
+        width: 70%;
+        margin:0em 1em 1em;
+    }
+    .section3 h1{
+        font-size: 30px;
+      
+    }
+    /* .navul{
+        display: none;
+    } */
+    .navbar li a{
+            font-size: 0.5em;
+        padding: 5px 10px;
+        font-weight: 700;
+    }
+    .from input{
+        width: 80%;
+        margin-left: 15px;
+        padding-top: 1em;
+      
+    
+    }
+      
+        
+}
