@@ -67,6 +67,7 @@ body{
     font-weight: 800;
     padding: 10px 20px;
     border-radius: 23px;
+    color: black;
     background-color: transparent;
     border: 1px solid #e66d04;
     cursor: pointer;
